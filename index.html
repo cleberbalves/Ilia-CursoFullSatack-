@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <script>
+    // Função para exibir mensagem de boas-vindas
+    function exibirMensagemBoasVindas() {
+        alert("Bem-vindo ao nosso site! Vamos aprender?");
+    }
+
+    // Função para exibir mensagem ao clicar em Cadastro
+    function exibirMensagemCadastro() {
+        alert("Seus dados estão seguros conosco, e só serão utilizados para fins de cadastro");
+    }
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +18,25 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="exibirMensagemBoasVindas();">
 
     <header>
       <h2>Vamos aprender a programar?</h2>
     </header>
     
+    <section class="row">
+      <div class="col-md-6">
+        <!-- Conteúdo da primeira seção -->
+      </div>
     <section>
       <nav>
         <ul>
           <i class="bi bi-card-list"></i> Menu </a></li>
-          
+          <br>
           <li><a href="frontend.html">FrontEnd</a></li>
           <li><a href="backend.html">Backend</a></li>
           <li><a href="fullStack.html">FullStack</a></li>
-          <a href="cadastro.html">Cadastro </a></li> 
+          <li><a href="cadastro.html" onclick="exibirMensagemCadastro();">Cadastro</a></li>
 
 
                   

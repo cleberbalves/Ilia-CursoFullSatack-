@@ -12,7 +12,7 @@
         <li><a href="index.html"><i class="bi bi-card-list"></i> Tela Inicial</a></li>
     </header>
     <h1>Cadastro de Usuário</h1>
-    <form action="processar_cadastro.php" method="post">
+    <form id="cadastroForm" action="processar_cadastro.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -47,14 +47,22 @@
         <input type="tel" id="telefone" name="telefone"><br><br>
 
         <label>Interesse em:</label>
-        <input type="checkbox" id="backend" name="interesse[]" value="Backend">
-        <label for="backend">Backend</label>
-        <input type="checkbox" id="frontend" name="interesse[]" value="FrontEnd">
-        <label for="frontend">FrontEnd</label>
-        <input type="checkbox" id="fullstack" name="interesse[]" value="Full Stack">
-        <label for="fullstack">Full Stack</label><br><br>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="backend" name="interesse[]" value="Backend">
+    <label class="form-check-label" for="backend">Backend</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="frontend" name="interesse[]" value="FrontEnd">
+    <label class="form-check-label" for="frontend">FrontEnd</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="fullstack" name="interesse[]" value="Full Stack">
+    <label class="form-check-label" for="fullstack">Full Stack</label><br><br>
 
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar" id="botaoCadastrar">
+
     </form>
+
+    <script src="cadastro.js"></script>
 </body>
 </html>
