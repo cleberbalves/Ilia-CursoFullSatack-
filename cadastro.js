@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const botaoCadastrar = document.getElementById("botaoCadastrar");
 
     botaoCadastrar.addEventListener("click", function(event) {
-        event.preventDefault(); // Impede o envio do formulário
+        event.preventDefault(); 
 
         const nome = document.getElementById("nome").value;
         const idade = document.getElementById("idade").value;
